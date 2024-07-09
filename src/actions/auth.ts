@@ -28,6 +28,7 @@ export async function loginAction(prevState: any, formData: FormData) {
 
 export async function logoutAction() {
   const cookiesStore = cookies();
+
   cookiesStore.delete("auth");
   redirect("/");
 }
