@@ -1,6 +1,8 @@
 import { getAuthData, logoutAction } from "../actions/auth";
 import { Form } from "./Form";
 
+import './Navbar.css'
+
 export async function Navbar() {
   const authData = await getAuthData();
 
